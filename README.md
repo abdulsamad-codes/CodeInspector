@@ -1,89 +1,49 @@
 # CodeInspector
 
-### A Clean Code Evaluator for Student Python Projects
+A clean code evaluator for student Python projects.
 
-CodeInspector is my semester project for Software Construction and Development at IMSciences, taught by Engr. Muhammad Umer Haroon. It will inspect Python projects and give feedback about naming, code style, function structure, and project completeness.
+This is my semester project for Software Construction and Development at IMSciences, taught by Engr. Muhammad Umer Haroon. It will read a Python project and suggest improvements to its naming, formatting, functions, and missing documentation.
 
-**Status:** Requirements and project planning. The analyzer has not been implemented yet.
+**Current status:** Planning and requirements are prepared. Development has not started.
 
-## Project Member
+## About Me
 
-| Detail | Information |
-| --- | --- |
-| Name | Abdul Samad |
-| Program | BSSE, Group A, Semester 5 |
-| Roll number | 2 |
-| GitHub | [abdulsamad-codes](https://github.com/abdulsamad-codes) |
-| Working arrangement | Individual project, with instructor permission |
+Abdul Samad | BSSE, Group A | Semester 5 | Roll number 2
 
-I am responsible for requirements, implementation, testing, documentation, and maintaining the Git repository.
+GitHub: [abdulsamad-codes](https://github.com/abdulsamad-codes)
 
-## Why This Project?
+I am working individually with the instructor's permission and will handle development, testing, documentation, and Git updates.
 
-Students can write programs that work but still have unclear names, large functions, repeated code, or missing documentation. CodeInspector will point out selected issues with their file locations and suggestions for improvement. It is intended for students reviewing Python projects and instructors providing feedback.
+## What It Will Check
 
-## Planned Checks
+- Selected PEP 8 naming and formatting rules, as suggested by Sir Umer.
+- Course rules about small functions, nesting, arguments, returns, and recursion.
+- Missing README/test files and empty functions.
+- Unused imports, similar functions, and scores in a later stage.
 
-The checks will come from two main sources:
+AI-use detection is also a research goal for later. It cannot prove who wrote a piece of code.
 
-- **PEP 8:** Python naming and formatting guidance. Sir Umer recommended researching it when reviewing the project idea. The selected checks and their limits are listed in the [requirements](docs/requirements.md).
-- **Course slides:** Meaningful names, small focused functions, shallow nesting, argument counts, return patterns, and recursion review.
+The tool will run locally from the command line. It will use Python's `ast` module for code structure and text/token checks for formatting, without executing the project's code. Reports will show issues, file locations, and suggestions. Supported rules and limits will be configurable.
 
-Other planned checks include missing README/test files, empty functions, unused imports, and duplicate function bodies. The report will explain findings and, later, show scores with a documented calculation.
+## Project Files
 
-AI-use detection remains a later research goal. It will be explored after the core rules work. Style signals alone cannot prove who wrote code, so any experimental result must clearly state its limitations.
+- [Requirements](docs/requirements.md) and [submission PDF](docs/requirements.pdf)
+- [Task backlog](docs/backlog.md)
+- [Version history](CHANGELOG.md)
+- Original assignment and proposal PDFs in the root folder
 
-## How It Will Work
+Application code and tests will be added when development begins.
 
-1. The user gives the path to a Python project folder.
-2. CodeInspector reads its Python files without running or importing them.
-3. Python's `ast` module checks code structure; source text and tokens support formatting checks.
-4. Separate checks record findings with rule names, file paths, line numbers where applicable, and suggestions.
-5. A report presents the results. Settings will allow supported rules and limits to be changed.
+## Naming and Versions
 
-The first interface will be a local command-line tool. No web application or database is planned for the initial version.
+Use descriptive `snake_case` names for functions, variables, and modules, `CapWords` for classes, and `UPPER_SNAKE_CASE` for constants. Folders and ordinary documents use lowercase names; standard files such as README.md keep their usual names.
 
-## Documents and Folder Structure
+Changes will have meaningful commits. Significant milestones use annotated `vMAJOR.MINOR.PATCH` tags: major for incompatible changes after the stable release, minor for features, and patch for fixes. During early 0.x development, interfaces may change. Git history replaces numbered copies of files.
 
-```text
-CodeInspector/
-|-- .gitignore
-|-- README.md
-|-- CHANGELOG.md
-|-- Assignment_1_SCD_IMSCIENCES.pdf
-|-- CodeInspector_Project_Proposal.pdf
-`-- docs/
-    |-- requirements.md
-    |-- requirements.pdf
-    `-- backlog.md
-```
+`v0.1.0` marks the initial planning work. `v1.0.0` will mark the first complete version. The requirements and backlog will be updated during the semester.
 
-- [Requirements](docs/requirements.md): project details, functional/non-functional requirements, priorities, assumptions, and limitations.
-- [Requirements PDF](docs/requirements.pdf): submission copy of the requirements document.
-- [Backlog](docs/backlog.md): planned tasks, responsibilities, and progress.
-- [Changelog](CHANGELOG.md): significant project milestones.
-
-As implementation starts, `codeinspector/` will hold application modules and `tests/` will hold tests. These folders will be added when they contain actual work.
-
-## Naming and Git Conventions
-
-- Use descriptive `snake_case` for Python modules, functions, and variables; `CapWords` for classes; and `UPPER_SNAKE_CASE` for constants.
-- Use lowercase descriptive names for folders and ordinary documents, keeping conventional names such as `README.md` and `CHANGELOG.md`.
-- Preserve the supplied assignment/proposal filenames.
-- Keep functions focused and follow the selected PEP 8 and course guidance.
-- Make focused commits with meaningful messages describing actual changes.
-- Maintain versions through Git history and annotated tags rather than duplicate files such as `final_v2.py`.
-- Use `vMAJOR.MINOR.PATCH`: major for incompatible changes after the stable release, minor for features, and patch for fixes. During initial `0.x` development, interfaces may change and will be documented.
-- `v0.1.0` identifies the requirements/planning baseline; it does not claim a working analyzer. Later milestones will be tagged when implemented and checked. `v1.0.0` will identify the first complete agreed version.
-
-## Limitations
-
-The tool will check selected style and structure rules, not program correctness. Naming and similarity findings need human review. Finding test files does not prove coverage. PEP 8 guidance and course-specific rules will be identified separately; this project does not claim complete PEP 8 compliance checking. Scores will summarize configured checks rather than certify overall software quality.
-
-## Assignment 1
-
-The requirements document, responsibilities, backlog, naming conventions, and version record are included here. Before submission, I still need to review the documents, verify public access to the repository and its committed PDF, and submit the repository link and that same PDF.
+These checks provide feedback, not proof of program correctness or complete PEP 8 compliance. Before submitting Assignment 1, I need to review the documents and submit the public repository link with the committed PDF.
 
 Repository: [CodeInspector](https://github.com/abdulsamad-codes/CodeInspector)
 
-Reference: [PEP 8 - Style Guide for Python Code](https://peps.python.org/pep-0008/)
+Reference: [PEP 8](https://peps.python.org/pep-0008/)

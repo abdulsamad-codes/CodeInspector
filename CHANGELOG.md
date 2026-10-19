@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - 19 October 2026
+
+Shortened the README, requirements, and backlog while keeping the assignment details and project scope. Updated the matching PDF. No application features changed.
+
 ## 0.1.0 - 19 October 2026
 
 Initial project planning and requirements baseline. No analyzer code is implemented yet.
