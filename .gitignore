@@ -1,0 +1,12 @@
+# Python generated files and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary files and generated analysis reports
+tmp/
+reports/
+
+# Local secrets
+.env
