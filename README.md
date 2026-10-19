@@ -30,7 +30,21 @@ The tool will run locally from the command line. It will use Python's `ast` modu
 - [Requirements](docs/requirements.md) and [submission PDF](docs/requirements.pdf)
 - [Task backlog](docs/backlog.md)
 - [Version history](CHANGELOG.md)
-- Original assignment and proposal PDFs in the root folder
+- Original [assignment](docs/references/Assignment_1_SCD_IMSCIENCES.pdf) and [proposal](docs/references/CodeInspector_Project_Proposal.pdf) in `docs/references/`
+
+```text
+CodeInspector/
+|-- .gitignore
+|-- README.md
+|-- CHANGELOG.md
+`-- docs/
+    |-- requirements.md
+    |-- requirements.pdf
+    |-- backlog.md
+    `-- references/
+        |-- Assignment_1_SCD_IMSCIENCES.pdf
+        `-- CodeInspector_Project_Proposal.pdf
+```
 
 Application code and tests will be added when development begins.
 

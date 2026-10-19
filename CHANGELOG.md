@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 - 19 October 2026
+
+Moved the original assignment and proposal into docs/references/ and updated the README links and folder overview. Requirements and application scope are unchanged.
+
 ## 0.1.1 - 19 October 2026
 
 Shortened the README, requirements, and backlog while keeping the assignment details and project scope. Updated the matching PDF. No application features changed.
