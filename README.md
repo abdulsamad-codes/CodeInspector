@@ -4,7 +4,7 @@ A clean code evaluator for student Python projects.
 
 This is my semester project for Software Construction and Development at IMSciences, taught by Engr. Muhammad Umer Haroon. It will read a Python project and suggest improvements to its naming, formatting, functions, and missing documentation.
 
-**Current status:** Planning and requirements are prepared. Development has not started.
+**Current status:** Assignment 1 documents are prepared. The analyzer is planned; implementation has not started.
 
 ## About Me
 
@@ -52,11 +52,17 @@ Application code and tests will be added when development begins.
 
 Use descriptive `snake_case` names for functions, variables, and modules, `CapWords` for classes, and `UPPER_SNAKE_CASE` for constants. Folders and ordinary documents use lowercase names; standard files such as README.md keep their usual names.
 
-Changes will have meaningful commits. Significant milestones use annotated `vMAJOR.MINOR.PATCH` tags: major for incompatible changes after the stable release, minor for features, and patch for fixes. During early 0.x development, interfaces may change. Git history replaces numbered copies of files.
+Work will be recorded directly on `main` in focused commits after checking each change. Commit messages will describe the actual change, for example `docs: clarify requirements` or `feat: check function names`.
+
+Significant milestones use annotated `vMAJOR.MINOR.PATCH` tags: major for incompatible changes after the stable release, minor for features, and patch for fixes. During early 0.x development, interfaces may change. Git history replaces numbered copies of files. Routine wording edits do not need a new tag.
 
 `v0.1.0` marks the initial planning work. `v1.0.0` will mark the first complete version. The requirements and backlog will be updated during the semester.
 
-These checks provide feedback, not proof of program correctness or complete PEP 8 compliance. Before submitting Assignment 1, I need to review the documents and submit the public repository link with the committed PDF.
+These checks provide feedback, not proof of program correctness or complete PEP 8 compliance.
+
+## Assignment 1 Submission
+
+Review the requirements, then submit this public repository link and [docs/requirements.pdf](docs/requirements.pdf). The PDF is the same document kept in the repository. Requirements, responsibilities, and progress will continue to be updated during the semester.
 
 Repository: [CodeInspector](https://github.com/abdulsamad-codes/CodeInspector)
 

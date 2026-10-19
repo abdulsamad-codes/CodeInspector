@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Clarified the workflow for focused commits on main and the exact Assignment 1 submission files.
+- Split the next development tasks into smaller pieces, with tests included in each task.
+
 ## 0.1.2 - 19 October 2026
 
 Moved the original assignment and proposal into docs/references/ and updated the README links and folder overview. Requirements and application scope are unchanged.
